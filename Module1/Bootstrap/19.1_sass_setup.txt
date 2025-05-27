@@ -1,0 +1,7 @@
+1. Initialize your project:
+   npm init -y
+2. Install Bootstrap:
+   npm install bootstrap
+3. Create a custom.scss and import Bootstrap:
+   @import 'node_modules/bootstrap/scss/bootstrap';
+4. Use a Sass compiler like Dart Sass or Webpack to build your CSS.
