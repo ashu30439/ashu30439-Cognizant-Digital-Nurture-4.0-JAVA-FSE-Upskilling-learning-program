@@ -1,0 +1,162 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and general font */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f0f8ff; /* Internal background color */
+  line-height: 1.6;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #4a90e2;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Remove default list styling for nav links */
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e0f7fa;
+}
+
+/* Welcome Banner */
+#welcomeBanner {
+  background-color: #d0e7ff;
+  color: #003366;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Highlight Section Header */
+.highlight {
+  background: linear-gradient(90deg, #a0d8f7, #4a90e2);
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Image gallery */
+.gallery-img {
+  border: 3px solid #4a90e2;
+  width: 180px; /* increased size */
+  height: auto;
+  border-radius: 5px;
+}
+#contact h2 {
+  text-align: center;
+}
+
+
+/* Table Styling */
+table {
+  margin: 0 auto 40px auto;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  border-collapse: collapse;
+  text-align: center;
+  width: 80%;
+}
+
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Zebra striping */
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Form Styles */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: 2px solid #4a90e2;
+}
+
+/* Button Styles */
+form button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #357abd;
+}
+
+/* Video Styling */
+video {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Location Text */
+#location {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive media query */
+@media screen and (max-width: 768px) {
+  nav {
+    text-align: left;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  form {
+    width: 90%;
+  }
+  .gallery-img {
+    width: 80px;
+  }
+}
