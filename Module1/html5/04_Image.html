@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Events Gallery</title>
+  <style>
+    .event-img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover; /* Ensures the image fills without distortion */
+      border: 2px solid black;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .event-img:hover {
+      transform: scale(1.05);
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    caption {
+      caption-side: top;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    td {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Past Community Events</caption>
+    <tr>
+      <td><img src="images/event1.jpg" alt="Event 1" title="Charity Walk" class="event-img"></td>
+      <td><img src="images/event2.jpg" alt="Event 2" title="Music Night" class="event-img"></td>
+      <td><img src="images/event3.jpg" alt="Event 3" title="Food Festival" class="event-img"></td>
+    </tr>
+    <tr>
+      <td><img src="images/event4.jpg" alt="Event 4" title="Tree Planting" class="event-img"></td>
+      <td><img src="images/event5.jpg" alt="Event 5" title="Book Fair" class="event-img"></td>
+      <td><img src="images/event6.jpg" alt="Event 6" title="Art Exhibition" class="event-img"></td>
+    </tr>
+  </table>
+
+</body>
+</html>

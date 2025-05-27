@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging Exercise - Event Portal</title>
+    <style>
+        /* Intentional style error: typo in 'background-color' */
+        #debugSection {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        .info {
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Community Event Debug Page</h1>
+
+    <!-- Intentional layout issue: typo in class name -->
+    <div id="debugSection" class="inf">
+        <p>Click the button to get a greeting in the console.</p>
+        <button onclick="greetUser()">Say Hello</button>
+    </div>
+
+    <script>
+        function greetUser() {
+            // Intentional variable name mismatch
+            let username = "Ashritha";
+            console.log("Greeting user...");
+            console.log("Hello, " + userName); // 'userName' should be 'username'
+        }
+    </script>
+</body>
+</html>
