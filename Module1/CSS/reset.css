@@ -1,0 +1,18 @@
+/* css/reset.css */
+/* Resetting margin, padding, and box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,35 @@
+/* Debug Test Section */
+.debug-test {
+  width: 600px; /* Fixed width to test overflow on small screens */
+  margin: 20px auto;
+  padding: 15px;
+  border: 3px solid red; /* Clearly visible border */
+  background-color: #ffe6e6; /* Light red background */
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #660000;
+  text-align: justify;
+
+  /* Intentionally use some problematic styles */
+  overflow: visible; /* Could cause content overflow */
+  white-space: nowrap; /* Forces text to stay on one line */
+}
+
+/* Example of a hidden element you can toggle in DevTools */
+.debug-test p {
+  display: block;
+  visibility: visible;
+  background-color: #fff0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 480px) {
+  .debug-test {
+    width: 100%; /* Fix overflow on small devices */
+    font-size: 16px;
+    white-space: normal; /* Allow wrapping */
+  }
+}
